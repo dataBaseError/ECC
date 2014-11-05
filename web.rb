@@ -1,6 +1,9 @@
 require 'sinatra'
 require_relative 'point_addition'
 
+# Change this value to the hostname or IP
+set :bind, '0.0.0.0'
+
 get '/ecc' do
 
     erb :form, :locals => {:result => '', :p => '', :a => '', :b => '', :x1 => '',
