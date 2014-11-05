@@ -18,6 +18,8 @@ A simple Elliptic Curve Calculator
 
         $ sudo gem install sinatra
 
-3. Run the website
+3. Adjust the hostname and IP as needed in web.rb
+
+4. Run the website
 
         $ ruby web.rb
