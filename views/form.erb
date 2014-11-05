@@ -1,0 +1,37 @@
+<h3>Elliptic Curve Calculator for elliptic curve</h3>
+<form action="/ecc" method="post">
+ <table>
+  <tbody>
+  <tr>
+    <td>p = </td>
+    <td><input type="number" name="p" required="true" value="<%= p %>"></td>
+  </tr>
+  <tr>
+    <td>a = </td>
+    <td><input type="number" name="a" required="true" value="<%= a %>"></td>
+  </tr>
+  <tr>
+    <td>b = </td>
+    <td><input type="number" name="b" required="true" value="<%= b %>"></td>
+  </tr>
+  <tr>
+    <td>Point P = </td>
+    <td>x:<input type="number" name="x1" required="true" value="<%= x1 %>"></td>
+    <td>y:<input type="number" name="y1" required="true" value="<%= y1 %>"></td>
+  </tr>
+  <tr>
+    <td>Point Q = </td>
+    <td>x:<input type="number" name="x2" value="<%= x2 %>"></td>
+    <td>y:<input type="number" name="y2" value="<%= y2 %>"></td>
+  </tr>
+  <tr>
+    <td>n = </td>
+    <td><input type="number" name="n" value="<%= n %>"></td>
+  </tr>
+  </tbody>
+  </table>
+  <input type="submit" name="calc_nP" value="Calculate nP">
+  <input type="submit" name="calc_P_Q" value="Calculate P + Q">
+
+  <p><%= result %></p>
+</form>
