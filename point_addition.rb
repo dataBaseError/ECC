@@ -27,6 +27,10 @@ $p = 11
 $a = 1
 $b = 6
 
+def validPoint(p, a, b, point) 
+    return (point.y * point.y) % p == (point.x * point.x * point.x + a * point.x + b) % p# where 4*a*a*a + 27 * b * b != 0
+end
+
 class Point
 
     attr_accessor :x, :y
